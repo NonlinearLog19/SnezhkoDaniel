@@ -12,16 +12,17 @@ html {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #3A403D;
-    background-color: #EAECE9;
+    background-color: #ECFAE5;
     line-height: 1.6;
     text-align: center;
     padding: 1rem;
+    padding-top: 80px;
 }
 
 /* Navigation */
 nav {
     width: 100%;
-    background-color: rgba(221, 224, 218, 0.75);
+    background-color: rgba(221, 246, 210, 0.75);
     padding: 1rem 0;
     position: fixed;
     top: 0;
@@ -31,7 +32,7 @@ nav {
 }
 
 nav:hover {
-    background-color: rgba(221, 224, 218, 1);
+    background-color: rgba(221, 246, 210, 1);
     box-shadow: 0 2px 4px rgba(58, 64, 61, 0.1);
 }
 
@@ -96,7 +97,7 @@ nav:hover {
 /* Header */
 header#home {
     height: 100vh;
-    background-image: url('../images/nature/BLUE8.jpg');
+    background-image: url('../images/nature/GREEN1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -106,8 +107,18 @@ header#home {
     position: relative;
 }
 
+header#home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
 .header-container {
     margin-top: 0;
+    position: relative;
+    z-index: 1;
 }
 
 .header_content {
@@ -129,7 +140,7 @@ header#home {
 .btn {
     padding: 0.75rem 1.5rem;
     border: none;
-    background-color: #5A635F;
+    background-color: #659350;
     color: #EAECE9;
     border-radius: 8px;
     cursor: pointer;
@@ -140,7 +151,7 @@ header#home {
 }
 
 .btn:hover {
-    background-color: #2A2F2C;
+    background-color: #CAE8BD;
 }
 
 /* About */
@@ -148,7 +159,7 @@ header#home {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #DDE0DA;
+    background-color: #DDF6D2;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(58, 64, 61, 0.1);
@@ -168,7 +179,7 @@ header#home {
 
 /* Portfolio (Index Page) */
 .portfolio_container {
-    background-color: #DDE0DA;
+    background-color: #DDF6D2;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(58, 64, 61, 0.1);
@@ -227,7 +238,7 @@ header#home {
 .filter_btn {
     padding: 0.5rem 1rem;
     border: none;
-    background-color: #C7C9C4;
+    background-color: #659350;
     color: #3A403D;
     border-radius: 6px;
     cursor: pointer;
@@ -236,11 +247,11 @@ header#home {
 }
 
 .filter_btn:hover {
-    background-color: #B0B3AE;
+    background-color: #B0DB9C;
 }
 
 .filter_btn.active {
-    background-color: #5A635F;
+    background-color: #659350;
     color: #EAECE9;
 }
 
@@ -249,7 +260,7 @@ header#home {
     align-items: center;
     justify-content: center;
     height: 200px;
-    background-color: #C7C9C4;
+    background-color: #CAE8BD;
     color: #5A635F;
     font-size: 1.2rem;
     font-weight: 500;
@@ -297,7 +308,7 @@ header#home {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #DDE0DA;
+    background-color: #DDF6D2;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(58, 64, 61, 0.1);
@@ -339,13 +350,13 @@ form {
 .input__group textarea {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #C7C9C4;
+    border: 1px solid #CAE8BD;
     border-radius: 6px;
 }
 
 /* Resume Section */
 .resume_container {
-    background-color: #DDE0DA;
+    background-color: #DDF6D2;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(58, 64, 61, 0.1);
@@ -377,10 +388,10 @@ form {
 
 /* Footer */
 footer {
-    background-color: #DDE0DA;
+    background-color: #DDF6D2;
     padding: 2rem 1rem;
     margin-top: 3rem;
-    border-top: 1px solid #C7C9C4;
+    border-top: 1px solid #CAE8BD;
 }
 
 .footer_container {
@@ -439,7 +450,7 @@ footer {
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: rgba(221, 224, 218, 0.9);
+        background-color: rgba(221, 246, 210, 0.9);
         box-shadow: 0 2px 4px rgba(58, 64, 61, 0.1);
         padding: 1rem 0;
     }
